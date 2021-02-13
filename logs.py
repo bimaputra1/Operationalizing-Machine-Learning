@@ -11,7 +11,7 @@ name = "votingensemblemodels"
 service = Webservice(name=name, workspace=ws)
 
 # Enable app insight
-service.update(enable_app_insight=True)
+service.update(enable_app_insights=True)
 
 # Get service log
 logs = service.get_logs()
