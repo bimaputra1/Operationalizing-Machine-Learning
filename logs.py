@@ -5,10 +5,15 @@ from azureml.core.webservice import Webservice
 ws = Workspace.from_config()
 
 # Set with the deployment name
-name = ""
+name = "votingensemblemodels"
 
 # load existing web service
 service = Webservice(name=name, workspace=ws)
+
+# Enable app insight
+service.update(enable_app_insight=True)
+
+# Get service log
 logs = service.get_logs()
 
 for line in logs.split('\n'):
