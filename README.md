@@ -5,13 +5,35 @@ In this project we aim to predict if a client will subscribe into bank services 
 
 ## Architectural Diagram
 
+
 ## Key Steps
 
+### Step 1 Authentication
+In this step, I used lab provided by Udacity. So that I dont need to setup the authentication.
+
+### Step 2 Automated ML Experiment
+
+This step start with uploading [Bankmarketing Datset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv) into the Azure ML Studio. 
+
+![Bankmarketing Dataset]() 
+
+*Figure 1: Bank Marketing Dataset*
+
+After that, I used the data to performed Automated Machine Learning Experiment using Classification with **y** as a target variable. This variable show that the customer will subscribe or not into the bank services.
+
+![AutomatedML Running]() 
+
+*Figure 2: Automated ML Running*
+
+As a result, the best model for this experiment is xxx with xx % model accuracy.
+
+![Best Model Resutls]()
+*Figure 3: Automated ML Results*
+
+### Step 3 Deploy the best model
 
 
-
-This project is part of Udacity Nanodegree
-
-This project is part of the Udacity Azure ML Nanodegree. In this project, we first learn to deploy the best model of an AutoML run, enable insights on, create documentation for and consume the resultant endpoint. Additionally, we also create, publish and consume a machine learning pipeline with an AutoML step using the Python SDK for Azure.
-
-This project is part of the Udacity Azure ML Engineer Nanodegree.Here, we have a plan to use Azure ML to to predict if a client will subscribe in the banking based on several independent variables that we have. [Bankmarketing Datset](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv).We trained our model using AutoML approach and best algorithm selected and deployed as an webservice to Azure Container Instance. At the end, we automated the procedures by creating and deploying a pipeline.
+### Step 4 Enable logging
+### Step 5 Swagger Documentation
+### Step 6 Consume model endpoints
+### Step 7 Create and publish a pipeline
