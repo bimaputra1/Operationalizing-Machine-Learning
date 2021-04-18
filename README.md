@@ -83,6 +83,9 @@ In this step, we create an automatedML pipeline in Jupyter Notebook. This includ
 ![Created Pipelines](images/13-pipelineendpoint.png)
 *Figure 13: Pipelines Endpoint*
 
+![Published Pipelines](images/14-publishedpipelines.png)
+*Figure 14: Published Pipelines* 
+
 ## Video Link
 This is the video link related to this project: https://youtu.be/fbsF0wY7Lrw
 
